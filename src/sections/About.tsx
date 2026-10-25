@@ -2,8 +2,6 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { 
-  GraduationCap, 
-  Award, 
   MapPin, 
   Briefcase,
   Brain,
