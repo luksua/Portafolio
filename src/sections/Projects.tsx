@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { ArrowRight, Clock } from 'lucide-react';
+import { ArrowRight, Clock, ExternalLink } from 'lucide-react';
 import { GithubIcon } from '../components/Icons';
 import { projectsData } from '../data/projectsData';
 import type { ProjectDetail } from '../data/projectsData';
@@ -12,6 +12,14 @@ export const Projects: React.FC = () => {
   const currentLang = (i18n.resolvedLanguage || i18n.language || 'es').toLowerCase().startsWith('en') ? 'en' : 'es';
   const isEn = currentLang === 'en';
   const [selectedProject, setSelectedProject] = useState<ProjectDetail | null>(null);
+
+  const handleProjectClick = (project: ProjectDetail) => {
+    if (project.liveUrl) {
+      window.open(project.liveUrl, '_blank', 'noopener,noreferrer');
+    } else {
+      setSelectedProject(project);
+    }
+  };
 
   return (
     <section id="projects" className="py-20 relative bg-gradient-to-b from-[#FBF5ED] via-[#F6ECE0] to-[#EFE2D2] border-b border-[#E0CFBB] overflow-hidden">
@@ -66,10 +74,11 @@ export const Projects: React.FC = () => {
               }}
               className="bg-white rounded-[18px] border border-[#D8C7DE] hover:border-[#6B4C7A] transition-colors duration-300 flex flex-col justify-between overflow-hidden shadow-sm group"
             >
-              {/* Visual Container (Pure Vector / Code Blueprint for upcoming, Telemetry for live) */}
+              {/* Visual Container */}
               <div 
-                onClick={() => setSelectedProject(project)}
+                onClick={() => handleProjectClick(project)}
                 className="relative h-56 overflow-hidden bg-[#FAF9FB] cursor-pointer"
+                title={project.liveUrl ? (isEn ? 'Click to visit Live Demo' : 'Clic para abrir el Demo') : (isEn ? 'Click to view details' : 'Clic para ver detalles')}
               >
                 {project.isUpcoming ? (
                   <div className="w-full h-full bg-[#18161D] p-5 flex flex-col justify-between font-mono text-xs text-slate-300 relative overflow-hidden group-hover:bg-[#1C1824] transition-colors">
@@ -94,7 +103,7 @@ export const Projects: React.FC = () => {
                       </div>
                       <div className="text-[10px] text-slate-400 flex items-center gap-1.5 pt-0.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping" />
-                        <span>sprint: design & logic flow</span>
+                        <span>sprint: architecture & logic</span>
                       </div>
                     </div>
 
@@ -108,21 +117,32 @@ export const Projects: React.FC = () => {
                     <img
                       src={project.image}
                       alt={project.title[currentLang]}
-                      className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
+                      className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.05]"
                     />
+
+                    {/* Hover Overlay with Live Demo Call to Action */}
+                    {project.liveUrl && (
+                      <div className="absolute inset-0 bg-[#4B3557]/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-20">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-[#4B3557] font-semibold text-xs shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                          <ExternalLink className="w-4 h-4 text-[#6B4C7A]" />
+                          <span>{t('projects.visitDemo')}</span>
+                        </span>
+                      </div>
+                    )}
+
                     {/* Live Telemetry Ribbon */}
-                    <div className="absolute bottom-2 left-2 right-2 px-3 py-1.5 rounded-lg bg-[#141218]/85 backdrop-blur-md border border-white/10 text-[10px] font-mono text-emerald-300 flex items-center justify-between shadow-sm">
-                      <span className="flex items-center gap-1.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                        <span>Laravel 10 · OpenAI API</span>
+                    <div className="absolute bottom-2 left-2 right-2 px-3 py-1.5 rounded-lg bg-[#141218]/85 backdrop-blur-md border border-white/10 text-[10px] font-mono text-emerald-300 flex items-center justify-between shadow-sm z-10">
+                      <span className="flex items-center gap-1.5 truncate mr-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+                        <span className="truncate">{project.technologies.slice(0, 2).join(' · ')}</span>
                       </span>
-                      <span className="text-slate-400">200 OK</span>
+                      <span className="text-slate-400 shrink-0">Live Demo</span>
                     </div>
                   </div>
                 )}
 
                 {/* Status Badges */}
-                <div className="absolute top-3 left-3 flex flex-wrap gap-2">
+                <div className="absolute top-3 left-3 flex flex-wrap gap-2 z-10">
                   {project.isUpcoming ? (
                     <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-medium bg-white/95 text-[#6F6A73] border border-[#E4E0E7] shadow-sm">
                       <Clock className="w-3 h-3 text-[#6B4C7A]" />
@@ -130,8 +150,8 @@ export const Projects: React.FC = () => {
                     </span>
                   ) : (
                     <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-medium bg-white/95 text-[#4B3557] border border-[#E4E0E7] shadow-sm">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#6B4C7A] animate-pulse" />
-                      <span>{isEn ? 'Featured Project' : 'Proyecto Destacado'}</span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                      <span>{isEn ? 'Live Project' : 'Demo Disponible'}</span>
                     </span>
                   )}
                 </div>
@@ -140,7 +160,7 @@ export const Projects: React.FC = () => {
               {/* Editorial Card Content */}
               <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
                 <div 
-                  onClick={() => setSelectedProject(project)}
+                  onClick={() => handleProjectClick(project)}
                   className="cursor-pointer space-y-2"
                 >
                   <span className="text-[11px] uppercase tracking-wider text-[#6B4C7A] font-semibold block">
@@ -172,17 +192,34 @@ export const Projects: React.FC = () => {
                 </div>
 
                 {/* Card Footer Actions */}
-                <div className="pt-4 border-t border-[#EDE4F0] flex items-center justify-between gap-2">
-                  <motion.button
-                    id={`btn-case-study-${project.id}`}
-                    onClick={() => setSelectedProject(project)}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#6B4C7A] hover:text-[#4B3557] transition-colors group/btn cursor-pointer"
-                  >
-                    <span>{t('projects.details')}</span>
-                    <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1.5 transition-transform" />
-                  </motion.button>
+                <div className="pt-4 border-t border-[#EDE4F0] flex flex-wrap items-center justify-between gap-2">
+                  <div className="flex items-center gap-2">
+                    {project.liveUrl && (
+                      <motion.a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#6B4C7A] text-white text-xs font-semibold hover:bg-[#4B3557] transition-all shadow-sm"
+                        title={t('projects.visitDemo')}
+                      >
+                        <ExternalLink className="w-3.5 h-3.5" />
+                        <span>{t('projects.liveDemo')}</span>
+                      </motion.a>
+                    )}
+
+                    <motion.button
+                      id={`btn-case-study-${project.id}`}
+                      onClick={() => setSelectedProject(project)}
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="inline-flex items-center gap-1 text-xs font-semibold text-[#6B4C7A] hover:text-[#4B3557] transition-colors group/btn cursor-pointer py-1 px-1.5"
+                    >
+                      <span>{t('projects.details')}</span>
+                      <ArrowRight className="w-3 h-3 group-hover/btn:translate-x-1 transition-transform" />
+                    </motion.button>
+                  </div>
 
                   <motion.a
                     href={project.githubUrl}
@@ -190,10 +227,11 @@ export const Projects: React.FC = () => {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-[#D8C7DE] bg-white text-xs font-medium text-[#1C1A1F] hover:border-[#6B4C7A] hover:text-[#6B4C7A] transition-colors shadow-sm"
+                    className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-[#D8C7DE] bg-white text-xs font-medium text-[#1C1A1F] hover:border-[#6B4C7A] hover:text-[#6B4C7A] transition-colors shadow-sm"
+                    title={t('projects.viewCode')}
                   >
                     <GithubIcon className="w-3.5 h-3.5" />
-                    <span>{t('projects.viewCode')}</span>
+                    <span className="hidden sm:inline">{t('projects.viewCode')}</span>
                   </motion.a>
                 </div>
               </div>

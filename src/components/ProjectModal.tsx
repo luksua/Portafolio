@@ -181,10 +181,10 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-canva-primary px-4 py-2 text-xs flex items-center gap-2"
+                    className="px-4 py-2 text-xs font-semibold rounded-lg bg-[#6B4C7A] text-white hover:bg-[#4B3557] flex items-center gap-2 shadow-sm transition-colors"
                   >
                     <ExternalLink className="w-3.5 h-3.5" />
-                    <span>GitHub Profile</span>
+                    <span>{t('projects.visitDemo')}</span>
                   </a>
                 )}
               </div>

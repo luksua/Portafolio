@@ -105,6 +105,8 @@
     "viewProject": "Detalles del Proyecto",
     "viewCode": "Ver Código",
     "details": "Ver Caso de Estudio",
+    "liveDemo": "Ver Demo",
+    "visitDemo": "Abrir Demo en Vivo",
     "statusUpcoming": "Proyecto Próximamente",
     "modal": {
       "problem": "El Desafío / Problema",
