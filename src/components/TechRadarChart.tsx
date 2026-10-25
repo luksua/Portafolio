@@ -89,10 +89,10 @@ export const TechRadarChart: React.FC = () => {
     },
   ];
 
-  // SVG Geometry Constants
-  const size = 320;
+  // SVG Geometry Constants optimized for mobile and desktop
+  const size = 360;
   const center = size / 2;
-  const radius = 115;
+  const radius = 105;
   const totalAxes = axes.length;
 
   // Calculate polygon points
@@ -108,9 +108,9 @@ export const TechRadarChart: React.FC = () => {
   const levels = [0.25, 0.5, 0.75, 1.0];
 
   return (
-    <div className="bg-white/90 backdrop-blur-md rounded-3xl border border-[#C7D7E8] p-6 sm:p-8 shadow-sm mb-14">
+    <div className="bg-white/90 backdrop-blur-md rounded-2xl sm:rounded-3xl border border-[#C7D7E8] p-4 sm:p-8 shadow-sm mb-12 sm:mb-14">
       {/* Visual Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-[#E2ECF5]">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 pb-5 sm:pb-6 border-b border-[#E2ECF5]">
         <div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EDF3F9] border border-[#C7D7E8] text-[11px] font-semibold tracking-wider text-[#3E6596] uppercase mb-1">
             <span className="w-1.5 h-1.5 rounded-full bg-[#3E6596] animate-pulse" />
@@ -127,11 +127,11 @@ export const TechRadarChart: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-6">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center pt-5 sm:pt-6">
         
         {/* Left Column: Pure SVG Radar Chart */}
         <div className="lg:col-span-6 flex flex-col items-center justify-center relative">
-          <div className="relative w-[290px] h-[290px] sm:w-[320px] sm:h-[320px] select-none">
+          <div className="relative w-full max-w-[290px] sm:max-w-[340px] aspect-square select-none">
             <svg 
               viewBox={`0 0 ${size} ${size}`} 
               className="w-full h-full drop-shadow-sm overflow-visible"
@@ -315,7 +315,7 @@ export const TechRadarChart: React.FC = () => {
 
                   {/* Percentage Metric Pill */}
                   <div className="flex items-center gap-2">
-                    <div className="w-16 h-2 rounded-full bg-[#E5EDF5] overflow-hidden hidden sm:block">
+                    <div className="w-12 sm:w-16 h-1.5 sm:h-2 rounded-full bg-[#E5EDF5] overflow-hidden">
                       <motion.div 
                         initial={{ width: 0 }}
                         whileInView={{ width: `${axis.value}%` }}
