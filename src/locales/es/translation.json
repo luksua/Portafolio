@@ -1,0 +1,252 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Skills",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "education": "Educación",
+    "certifications": "Certificaciones",
+    "contact": "Contacto",
+    "downloadCv": "Descargar CV"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Luna Sofia Ospina Rodríguez",
+    "role": "Desarrolladora de Software Junior",
+    "tagline": "Construyo experiencias digitales, APIs y soluciones web que convierten ideas en productos.",
+    "badge": "Disponible para nuevas oportunidades",
+    "viewProjects": "Ver proyectos",
+    "downloadCv": "Descargar CV",
+    "contactMe": "Contactarme",
+    "terminalTitle": "luna@developer: ~",
+    "terminalCommand": "cat profile.json",
+    "terminalOutput": "{\"role\": \"Junior Software Developer\", \"focus\": [\"REST APIs\", \"Clean Architecture\", \"AI Automation\"], \"status\": \"Ready to create\"}"
+  },
+  "about": {
+    "badge": "Conóceme",
+    "title": "Sobre mí",
+    "p1": "Estudiante de sexto semestre de Ingeniería de Sistemas y Tecnóloga en Análisis y Desarrollo de Software, con experiencia práctica desarrollando APIs REST y aplicaciones web modernas.",
+    "p2": "Cuento con experiencia en autenticación JWT, bases de datos relacionales, buenas prácticas de arquitectura y proyectos de automatización con IA. Me apasiona el código limpio, la optimización y el aprendizaje continuo, buscando aportar valor técnico en equipos ágiles de desarrollo.",
+    "stats": {
+      "semesters": {
+        "value": "+6",
+        "label": "Semestres Ing. de Sistemas",
+        "sub": "Universidad del Tolima"
+      },
+      "technologist": {
+        "value": "ADSO",
+        "label": "Tecnóloga SENA",
+        "sub": "Análisis y Desarrollo de Software"
+      },
+      "api": {
+        "value": "APIs",
+        "label": "REST & Backend",
+        "sub": "Arquitectura y Autenticación"
+      },
+      "ai": {
+        "value": "IA",
+        "label": "Automatización con IA",
+        "sub": "Integración de Modelos"
+      }
+    },
+    "highlightsTitle": "¿Qué aporto a un equipo de desarrollo?",
+    "highlights": [
+      {
+        "title": "Desarrollo Backend & APIs",
+        "desc": "Diseño de APIs RESTful estructuradas, validaciones robustas y flujos de autenticación seguros."
+      },
+      {
+        "title": "Integración Frontend Dinámico",
+        "desc": "Construcción de interfaces interactivas y responsivas conectadas con servicios backend."
+      },
+      {
+        "title": "Innovación & IA Práctica",
+        "desc": "Implementación de automatizaciones y resúmenes inteligentes mediante APIs de IA generativa."
+      },
+      {
+        "title": "Metodologías Ágiles",
+        "desc": "Trabajo colaborativo con Git, flujos Scrum y gestión de tareas en plataformas como Jira."
+      }
+    ]
+  },
+  "techStack": {
+    "badge": "Habilidades Técnicas",
+    "title": "Stack Tecnológico",
+    "subtitle": "Herramientas y tecnologías que utilizo para construir soluciones eficientes y escalables.",
+    "categories": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "databases": "Bases de Datos",
+      "tools": "Herramientas & Metodologías"
+    }
+  },
+  "experience": {
+    "badge": "Trayectoria Práctica",
+    "title": "Experiencia Laboral",
+    "subtitle": "Experiencia aplicada en proyectos reales de desarrollo web e integraciones de software.",
+    "role": "Aprendiz SENA — Desarrolladora Web",
+    "company": "SENA / Plataforma Intranet Institucional",
+    "period": "Etapa Práctica Profesional",
+    "type": "Desarrollo Full Stack & Automatización",
+    "responsibilitiesTitle": "Logros e Impacto Clave:",
+    "achievements": [
+      "Arquitectura Backend & CRUD: Módulos dinámicos con Laravel y MySQL.",
+      "IA con OpenAI API: Automatización y resúmenes inteligentes de artículos.",
+      "Analítica en Tiempo Real: Dashboard de métricas, visitas y ranking de lectores.",
+      "Seguridad con Laravel Sanctum: Autenticación por tokens y control de roles."
+    ],
+    "techUsed": "Tecnologías aplicadas:"
+  },
+  "projects": {
+    "badge": "Portafolio",
+    "title": "Proyectos Destacados",
+    "subtitle": "Soluciones desarrolladas y proyectos en proceso con enfoque en arquitectura y experiencia de usuario.",
+    "viewProject": "Detalles del Proyecto",
+    "viewCode": "Ver Código",
+    "details": "Ver Caso de Estudio",
+    "statusUpcoming": "Proyecto Próximamente",
+    "modal": {
+      "problem": "El Desafío / Problema",
+      "solution": "La Solución Técnica",
+      "tech": "Tecnologías Implementadas",
+      "architecture": "Arquitectura & Flujo",
+      "result": "Resultados e Impacto",
+      "close": "Cerrar"
+    }
+  },
+  "education": {
+    "badge": "Formación Académica",
+    "title": "Educación",
+    "subtitle": "Fundamentos teóricos y técnicos en constante evolución.",
+    "items": [
+      {
+        "degree": "Ingeniería de Sistemas",
+        "institution": "Universidad del Tolima",
+        "period": "Sexto semestre — Actualmente cursando",
+        "description": "Formación en algoritmos, estructuras de datos, arquitectura de software, bases de datos y cálculo."
+      },
+      {
+        "degree": "Tecnóloga en Análisis y Desarrollo de Software",
+        "institution": "SENA (Servicio Nacional de Aprendizaje)",
+        "period": "Certificada — Ficha 2927134",
+        "description": "Formación integral en desarrollo web, ciclo de vida del software, APIs REST, POO, bases de datos y pruebas."
+      },
+      {
+        "degree": "Bachiller Académico",
+        "institution": "I.E. Santa Teresa de Jesús",
+        "period": "2012 – 2023",
+        "description": "Educación secundaria y media vocacional con bases académicas sólidas y disciplina."
+      }
+    ]
+  },
+  "certifications": {
+    "badge": "Logros y Credenciales",
+    "title": "Certificaciones & Reconocimientos",
+    "subtitle": "Validación de conocimientos continuos y desempeño destacado.",
+    "featuredBadge": "Distinción Especial",
+    "items": [
+      {
+        "id": "best-apprentice",
+        "title": "Mejor Aprendiz ADSO 2927134, 2025",
+        "issuer": "SENA",
+        "year": "2025",
+        "isAward": true,
+        "description": "Reconocimiento otorgado por excelencia académica, liderazgo técnico, compromiso y desempeño integral durante el programa de formación tecnológica."
+      },
+      {
+        "id": "gen-ai",
+        "title": "IA Generativa: Conceptos básicos de ingeniería de instrucciones",
+        "issuer": "Coursera",
+        "hours": "30 horas",
+        "isAward": false,
+        "description": "Fundamentos de modelos generativos, diseño sistemático de prompts, optimización de consultas y aplicaciones prácticas."
+      },
+      {
+        "id": "ai-solutions",
+        "title": "Implementación de soluciones de inteligencia artificial",
+        "issuer": "SENA",
+        "isAward": false,
+        "description": "Capacitación práctica en integración de algoritmos de IA, procesamiento automatizado y servicios cognitivos en aplicaciones de software."
+      },
+      {
+        "id": "office-tools",
+        "title": "Informática: Microsoft Word, Excel e Internet",
+        "issuer": "SENA",
+        "isAward": false,
+        "description": "Manejo avanzado de herramientas de productividad ofimática y gestión eficiente de información."
+      },
+      {
+        "id": "office-basics",
+        "title": "Manejo básico de herramientas ofimáticas",
+        "issuer": "SENA",
+        "isAward": false,
+        "description": "Competencias digitales fundamentales para la documentación técnica y flujos de trabajo profesionales."
+      }
+    ]
+  },
+  "softSkills": {
+    "badge": "Habilidades Profesionales",
+    "title": "Competencias Blandas",
+    "subtitle": "Cualidades interpersonales y metodológicas que impulsan el trabajo en equipo y la calidad técnica.",
+    "skills": [
+      { "name": "Pensamiento analítico", "desc": "Capacidad de descomponer problemas complejos en componentes claros." },
+      { "name": "Creatividad e innovación", "desc": "Búsqueda proactiva de soluciones frescas y funcionales." },
+      { "name": "Resolución de problemas", "desc": "Enfoque pragmático y orientado a resultados eficientes." },
+      { "name": "Pensamiento crítico", "desc": "Evaluación objetiva de decisiones de arquitectura y código." },
+      { "name": "Adaptabilidad", "desc": "Rápida asimilación de nuevos entornos, herramientas y lenguajes." },
+      { "name": "Aprendizaje continuo", "desc": "Curiosidad constante por las últimas tendencias tecnológicas y mejores prácticas." },
+      { "name": "Atención al detalle", "desc": "Cuidado minucioso en la usabilidad, consistencia y calidad del código." },
+      { "name": "Trabajo en equipo & Colaboración", "desc": "Comunicación asertiva y soporte mutuo en equipos ágiles." },
+      { "name": "Responsabilidad & Compromiso", "desc": "Entrega puntual y dedicación con los objetivos trazados." }
+    ]
+  },
+  "languages": {
+    "badge": "Idiomas",
+    "title": "Competencias Lingüísticas",
+    "subtitle": "Capacidad de comunicación en entornos locales e internacionales.",
+    "items": [
+      {
+        "lang": "Español",
+        "level": "Nativo",
+        "desc": "Lengua materna. Comunicación fluida, técnica y profesional."
+      },
+      {
+        "lang": "Inglés",
+        "level": "Intermedio - Avanzado",
+        "desc": "Capacidad de lectura de documentación técnica, redacción de código y comunicación profesional.",
+        "cert": "Certificado — Academia Lingüi"
+      }
+    ]
+  },
+  "contact": {
+    "badge": "Iniciemos conversación",
+    "title": "¿Trabajamos juntos?",
+    "subtitle": "Estoy disponible para incorporarme a equipos de desarrollo como Desarrolladora Junior. ¡Hablemos de tus proyectos o vacantes!",
+    "emailLabel": "Correo electrónico",
+    "phoneLabel": "Teléfono / WhatsApp",
+    "locationLabel": "Ubicación",
+    "locationValue": "Colombia (Disponible remoto / presencial)",
+    "form": {
+      "nameLabel": "Tu nombre completo",
+      "namePlaceholder": "Ej. Andrea Gómez",
+      "emailLabel": "Tu correo electrónico",
+      "emailPlaceholder": "andrea@empresa.com",
+      "messageLabel": "Mensaje o propuesta",
+      "messagePlaceholder": "Cuéntame sobre la posición o tu proyecto...",
+      "send": "Enviar mensaje",
+      "sending": "Enviando mensaje...",
+      "success": "¡Mensaje recibido! Te responderé muy pronto.",
+      "error": "Por favor completa todos los campos requeridos."
+    }
+  },
+  "footer": {
+    "role": "Desarrolladora de Software Junior",
+    "rights": "Todos los derechos reservados.",
+    "craftedWith": "Diseñado y desarrollado con pasión por el código y la arquitectura limpia."
+  },
+  "intro": {
+    "skip": "Saltar intro",
+    "role": "Software Developer"
+  }
+}

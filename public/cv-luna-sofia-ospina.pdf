@@ -1,0 +1,138 @@
+%PDF-1.4
+1 0 obj
+<<
+  /Type /Catalog
+  /Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+  /Type /Pages
+  /Kids [3 0 R]
+  /Count 1
+>>
+endobj
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 612 792]
+  /Resources <<
+    /Font <<
+      /F1 4 0 R
+      /F2 5 0 R
+    >>
+  >>
+  /Contents 6 0 R
+>>
+endobj
+4 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica-Bold
+>>
+endobj
+5 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica
+>>
+endobj
+6 0 obj
+<< /Length 1250 >>
+stream
+BT
+/F1 22 Tf
+50 740 Td
+(Luna Sofia Ospina Rodriguez) Tj
+/F2 13 Tf
+0 -24 Td
+(Desarrolladora de Software Junior | Junior Software Developer) Tj
+/F2 10 Tf
+0 -18 Td
+(Email: lunasofiaor04@gmail.com  |  Tel: +57 322 8783122  |  Colombia) Tj
+0 -10 Td
+(________________________________________________________________________________) Tj
+/F1 13 Tf
+0 -26 Td
+(PERFIL PROFESIONAL) Tj
+/F2 10 Tf
+0 -16 Td
+(Estudiante de 6to semestre de Ingenieria de Sistemas y Tecnologa en Analisis) Tj
+0 -14 Td
+(y Desarrollo de Software (ADSO - SENA), con experiencia practica desarrollando) Tj
+0 -14 Td
+(APIs REST y aplicaciones web. Experiencia en autenticacion JWT, bases de datos) Tj
+0 -14 Td
+(relacionales, buenas practicas de arquitectura y proyectos de automatizacion con IA.) Tj
+/F1 13 Tf
+0 -26 Td
+(EXPERIENCIA LABORAL) Tj
+/F1 11 Tf
+0 -18 Td
+(Aprendiz SENA - Desarrolladora Web  |  Plataforma Intranet Institucional) Tj
+/F2 10 Tf
+0 -15 Td
+(- Desarrollo de modulos de contenido dinamico y CRUD completo.) Tj
+0 -14 Td
+(- Integracion de editor enriquecido mediante EditorJS y gestion de categorias.) Tj
+0 -14 Td
+(- Publicacion programada de articulos y generacion automatica de resumenes con OpenAI API.) Tj
+0 -14 Td
+(- Dashboard administrativo con metricas, graficas interactivas y ranking de lectores.) Tj
+0 -14 Td
+(- Implementacion de autenticacion y control de acceso seguro mediante Laravel Sanctum.) Tj
+/F1 13 Tf
+0 -26 Td
+(EDUCACION) Tj
+/F2 10 Tf
+0 -16 Td
+(- Ingenieria de Sistemas - Universidad del Tolima (6to semestre - En curso)) Tj
+0 -14 Td
+(- Tecnologa en Analisis y Desarrollo de Software - SENA (Certificada)) Tj
+0 -14 Td
+(- Bachiller - I.E. Santa Teresa de Jesus (2012 - 2023)) Tj
+/F1 13 Tf
+0 -26 Td
+(CERTIFICACIONES Y LOGROS) Tj
+/F2 10 Tf
+0 -16 Td
+(- Mejor Aprendiz ADSO 2927134, 2025 - SENA (Reconocimiento al Merito)) Tj
+0 -14 Td
+(- IA Generativa: Conceptos basicos de ingenieria de instrucciones - Coursera (30 horas)) Tj
+0 -14 Td
+(- Implementacion de soluciones de inteligencia artificial - SENA) Tj
+0 -14 Td
+(- Ingles Intermedio-Avanzado - Certificado Academia Lingui) Tj
+/F1 13 Tf
+0 -26 Td
+(STACK TECNOLOGICO) Tj
+/F2 10 Tf
+0 -16 Td
+(Backend: PHP, Laravel, Python, Java, Spring Boot) Tj
+0 -14 Td
+(Frontend: Vue.js, React, JavaScript, TypeScript, HTML5, CSS3) Tj
+0 -14 Td
+(Bases de Datos & Herramientas: MySQL, SQL, Git, Jira, Swagger/OpenAPI, JWT, Scrum) Tj
+ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000262 00000 n 
+0000000344 00000 n 
+0000000421 00000 n 
+trailer
+<<
+  /Size 7
+  /Root 1 0 R
+>>
+startxref
+1723
+%%EOF

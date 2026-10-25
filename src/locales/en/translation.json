@@ -1,0 +1,252 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "certifications": "Certifications",
+    "contact": "Contact",
+    "downloadCv": "Download CV"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Luna Sofia Ospina Rodríguez",
+    "role": "Junior Software Developer",
+    "tagline": "I build digital experiences, APIs, and web solutions that turn ideas into scalable products.",
+    "badge": "Available for new opportunities",
+    "viewProjects": "View Projects",
+    "downloadCv": "Download CV",
+    "contactMe": "Contact Me",
+    "terminalTitle": "luna@developer: ~",
+    "terminalCommand": "cat profile.json",
+    "terminalOutput": "{\"role\": \"Junior Software Developer\", \"focus\": [\"REST APIs\", \"Clean Architecture\", \"AI Automation\"], \"status\": \"Ready to create\"}"
+  },
+  "about": {
+    "badge": "Get to know me",
+    "title": "About Me",
+    "p1": "6th-semester Systems Engineering student and Technologist in Software Analysis and Development (ADSO), with hands-on experience building REST APIs and modern web applications.",
+    "p2": "Experienced in JWT authentication, relational databases, software architecture best practices, and AI automation projects. Passionate about clean code, performance optimization, and continuous learning, looking to bring technical value to agile development teams.",
+    "stats": {
+      "semesters": {
+        "value": "+6",
+        "label": "Semesters Systems Eng.",
+        "sub": "Universidad del Tolima"
+      },
+      "technologist": {
+        "value": "ADSO",
+        "label": "SENA Technologist",
+        "sub": "Software Analysis & Development"
+      },
+      "api": {
+        "value": "APIs",
+        "label": "REST & Backend",
+        "sub": "Architecture & Auth"
+      },
+      "ai": {
+        "value": "AI",
+        "label": "AI Automation",
+        "sub": "LLM API Integration"
+      }
+    },
+    "highlightsTitle": "What do I bring to a development team?",
+    "highlights": [
+      {
+        "title": "Backend Development & APIs",
+        "desc": "Architecting clean RESTful endpoints, robust validations, and secure authentication flows."
+      },
+      {
+        "title": "Dynamic Frontend Integration",
+        "desc": "Building interactive, responsive interfaces connected seamlessly to backend microservices."
+      },
+      {
+        "title": "Innovation & Practical AI",
+        "desc": "Integrating intelligent automations and summaries leveraging modern Generative AI APIs."
+      },
+      {
+        "title": "Agile Methodologies",
+        "desc": "Collaborative workflows with Git, Scrum ceremonies, and structured task tracking in Jira."
+      }
+    ]
+  },
+  "techStack": {
+    "badge": "Technical Skills",
+    "title": "Tech Stack",
+    "subtitle": "Technologies and tools I use to engineer robust, scalable, and modern digital solutions.",
+    "categories": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "databases": "Databases",
+      "tools": "Tools & Methodologies"
+    }
+  },
+  "experience": {
+    "badge": "Hands-on Experience",
+    "title": "Work Experience",
+    "subtitle": "Applied experience building real-world web applications and software integrations.",
+    "role": "SENA Apprentice — Web Developer",
+    "company": "SENA / Institutional Intranet Platform",
+    "period": "Professional Apprenticeship Stage",
+    "type": "Full Stack Development & Automation",
+    "responsibilitiesTitle": "Key Achievements & Impact:",
+    "achievements": [
+      "Backend Architecture & CRUD: Dynamic modules built with Laravel & MySQL.",
+      "AI with OpenAI API: Automated smart summaries for published articles.",
+      "Real-Time Analytics: Metrics dashboard with visit tracking & reader rankings.",
+      "Security with Laravel Sanctum: Token-based authentication & role control."
+    ],
+    "techUsed": "Technologies used:"
+  },
+  "projects": {
+    "badge": "Portfolio",
+    "title": "Featured Projects",
+    "subtitle": "Software solutions and works in progress focused on robust architecture and delightful user experience.",
+    "viewProject": "Project Details",
+    "viewCode": "View Code",
+    "details": "View Case Study",
+    "statusUpcoming": "Coming Soon",
+    "modal": {
+      "problem": "The Challenge / Problem",
+      "solution": "Technical Solution",
+      "tech": "Implemented Technologies",
+      "architecture": "Architecture & Flow",
+      "result": "Results & Impact",
+      "close": "Close"
+    }
+  },
+  "education": {
+    "badge": "Academic Background",
+    "title": "Education",
+    "subtitle": "Continuous learning and strong technical and algorithmic foundations.",
+    "items": [
+      {
+        "degree": "B.S. in Systems Engineering",
+        "institution": "Universidad del Tolima",
+        "period": "Sixth Semester — Currently Enrolled",
+        "description": "Rigorous academic training in algorithms, data structures, software architecture, databases, and applied mathematics."
+      },
+      {
+        "degree": "Technologist in Software Analysis and Development (ADSO)",
+        "institution": "SENA (National Training Service)",
+        "period": "Certified — Cohort 2927134",
+        "description": "Comprehensive practical program in web engineering, software lifecycle, REST APIs, OOP, relational databases, and testing."
+      },
+      {
+        "degree": "High School Diploma (Bachiller)",
+        "institution": "I.E. Santa Teresa de Jesús",
+        "period": "2012 – 2023",
+        "description": "Secondary education with solid academic foundations, teamwork, and strong discipline."
+      }
+    ]
+  },
+  "certifications": {
+    "badge": "Credentials & Honors",
+    "title": "Certifications & Achievements",
+    "subtitle": "Proof of continuous technical learning and outstanding performance.",
+    "featuredBadge": "Special Distinction",
+    "items": [
+      {
+        "id": "best-apprentice",
+        "title": "Best Apprentice ADSO 2927134, 2025",
+        "issuer": "SENA",
+        "year": "2025",
+        "isAward": true,
+        "description": "Awarded for exceptional academic excellence, technical leadership, commitment, and outstanding overall performance during the software development training program."
+      },
+      {
+        "id": "gen-ai",
+        "title": "Generative AI: Prompt Engineering Basics",
+        "issuer": "Coursera",
+        "hours": "30 hours",
+        "isAward": false,
+        "description": "Core concepts of generative foundation models, systematic prompt design, query optimization, and real-world AI applications."
+      },
+      {
+        "id": "ai-solutions",
+        "title": "Implementation of Artificial Intelligence Solutions",
+        "issuer": "SENA",
+        "isAward": false,
+        "description": "Practical training in integrating AI algorithms, automated data processing, and cognitive services into software applications."
+      },
+      {
+        "id": "office-tools",
+        "title": "Computer Science: Microsoft Word, Excel & Internet",
+        "issuer": "SENA",
+        "isAward": false,
+        "description": "Advanced productivity tools, efficient data processing, and digital document workflows."
+      },
+      {
+        "id": "office-basics",
+        "title": "Basic Management of Office Tools",
+        "issuer": "SENA",
+        "isAward": false,
+        "description": "Essential digital proficiencies for software documentation and professional communication."
+      }
+    ]
+  },
+  "softSkills": {
+    "badge": "Professional Competencies",
+    "title": "Soft Skills",
+    "subtitle": "Interpersonal and methodical strengths that elevate teamwork and code quality.",
+    "skills": [
+      { "name": "Analytical Thinking", "desc": "Deconstructing complex problems into manageable, structured components." },
+      { "name": "Creativity & Innovation", "desc": "Proactively crafting fresh, functional, and user-centric solutions." },
+      { "name": "Problem Solving", "desc": "Pragmatic, results-oriented focus when troubleshooting and optimizing." },
+      { "name": "Critical Thinking", "desc": "Objective evaluation of trade-offs in architecture and code design." },
+      { "name": "Adaptability", "desc": "Rapidly learning and assimilating new tools, frameworks, and environments." },
+      { "name": "Continuous Learning", "desc": "Constant curiosity for modern developer tooling and engineering best practices." },
+      { "name": "Attention to Detail", "desc": "Meticulous care regarding code consistency, clean UX, and edge cases." },
+      { "name": "Teamwork & Collaboration", "desc": "Active listening, clear communication, and support within agile squads." },
+      { "name": "Responsibility & Commitment", "desc": "Punctual delivery, reliability, and high dedication to project goals." }
+    ]
+  },
+  "languages": {
+    "badge": "Languages",
+    "title": "Language Proficiency",
+    "subtitle": "Communication skills across local and international settings.",
+    "items": [
+      {
+        "lang": "Spanish",
+        "level": "Native",
+        "desc": "Mother tongue. Fluent, technical, and articulate communication."
+      },
+      {
+        "lang": "English",
+        "level": "Intermediate - Advanced (B2)",
+        "desc": "Capable of comprehending complex technical documentation, code comments, and professional discussion.",
+        "cert": "Certified — Academia Lingüi"
+      }
+    ]
+  },
+  "contact": {
+    "badge": "Let's connect",
+    "title": "Let's Work Together",
+    "subtitle": "I am available to join development squads as a Junior Software Developer. Let's discuss your projects or open positions!",
+    "emailLabel": "Email address",
+    "phoneLabel": "Phone / WhatsApp",
+    "locationLabel": "Location",
+    "locationValue": "Colombia (Available for remote & on-site)",
+    "form": {
+      "nameLabel": "Your full name",
+      "namePlaceholder": "e.g. Andrea Smith",
+      "emailLabel": "Your email address",
+      "emailPlaceholder": "andrea@company.com",
+      "messageLabel": "Message or job proposal",
+      "messagePlaceholder": "Tell me about your team or project needs...",
+      "send": "Send Message",
+      "sending": "Sending message...",
+      "success": "Message received! I will reply very soon.",
+      "error": "Please fill out all required fields."
+    }
+  },
+  "footer": {
+    "role": "Junior Software Developer",
+    "rights": "All rights reserved.",
+    "craftedWith": "Crafted with clean code, modern architecture, and passion for engineering."
+  },
+  "intro": {
+    "skip": "Skip intro",
+    "role": "Software Developer"
+  }
+}

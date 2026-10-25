@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    background-color: #FAF9FB;
+    color: #1C1A1F;
+
+  }
+
+  /* Elegant minimal scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FAF9FB;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #E4E0E7;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B8A8C1;
+  }
+}
+
+@layer components {
+  /* Minimal Canva Card */
+  .canva-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E4E0E7;
+    border-radius: 14px;
+    transition: all 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .canva-card:hover {
+    border-color: #B8A8C1;
+  }
+
+  /* Primary Editorial Button */
+  .btn-canva-primary {
+    background-color: #6B4C7A;
+    color: #FFFFFF;
+    border-radius: 9px;
+    font-weight: 500;
+    transition: all 250ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-canva-primary:hover {
+    background-color: #4B3557;
+  }
+
+  /* Secondary Editorial Button */
+  .btn-canva-secondary {
+    background-color: transparent;
+    color: #1C1A1F;
+    border: 1px solid #E4E0E7;
+    border-radius: 9px;
+    font-weight: 500;
+    transition: all 250ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-canva-secondary:hover {
+    border-color: #6B4C7A;
+    color: #6B4C7A;
+  }
+
+  /* Editorial Skill Pill */
+  .skill-pill {
+    background-color: #FFFFFF;
+    border: 1px solid #E4E0E7;
+    color: #1C1A1F;
+    border-radius: 9999px;
+    padding: 0.4rem 1rem;
+    font-size: 0.825rem;
+    font-weight: 500;
+    transition: all 200ms ease;
+  }
+  .skill-pill:hover {
+    border-color: #6B4C7A;
+    color: #6B4C7A;
+    background-color: #F3F1F5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
